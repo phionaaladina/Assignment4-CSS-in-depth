@@ -1,0 +1,193 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-link a {
+    position: absolute;
+    top: 10%;  /* Adjust to move link down */
+    left: 50%;
+    transform: translateX(-50%);  /* Center the link horizontally */
+    font-size: 1.5rem;
+    color: black;  /* Cafe color */
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 10;  /* Ensures it's above the image */
+    transition: color 0.3s ease;
+}
+
+.menu-link a:hover {
+    color: #fff;  
+}
+
+/* Visited link styling */
+.menu-link a:visited {
+    color: orangered;  
+    
+}
+
+.menu {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #d2691e;
+    margin-bottom: 20px;
+}
+
+.menu {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #d2691e;
+    margin-bottom: 20px;
+}
+
+
+.beverages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.beverage-section {
+    width: 48%; /* Ensures the sections stay side by side */
+}
+
+.beverage-section h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+/* Styling for the beverage list */
+.beverage-list {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+/* List item styles for both  lists */
+.beverage-list li {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for unordered list (bulleted) */
+.beverage-section ul.beverage-list li {
+    list-style-type: disc;
+}
+
+/* Styling for ordered list (numbered) */
+.beverage-section ol.beverage-list li {
+    list-style-type: decimal;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.95;
+    
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem; 
+    color: orangered; 
+    font-weight: bold;
+    text-align: center;
+    z-index: 10; /* Ensures text is on top of image */
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right {
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.top-left {
+    top: 10%;
+    left: 6%;
+}
+
+.top-right {
+    top: 10%;
+    right: 6%;
+}
+
+.bottom-left {
+    bottom: 10%;
+    left: 6%;
+}
+
+.bottom-right {
+    bottom: 10%;
+    right: 6%;
+}
+
+
+/* Style for the social icons container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Adds space between icons */
+    margin-top: 20px;
+}
+
+/* Style for each individual icon */
+.social-icons i {
+    font-size: 2.5rem; 
+    color: #000; 
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icons i:hover {
+    color: orangered; 
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
